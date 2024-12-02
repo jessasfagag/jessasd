@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logoBrand">
+                    <a href="homePage.html"><img src="image/logoIcon (1).png" class="logoIcon"></a>
+                    <h1 class="brandName">BeautyandtheBest</h1>
+                </div>
+                <a href=""><img src="image/registerUser.png" class="profileIcon"></a>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <div class="menu">
+        <div class="section">
+        <div class="btn nav-btn">
+        <a href="dashboard.html">
+            <button type="submit">
+                <img src="image/dashboardIcon.png" class="image" style="width: 30px; height: 30px;">
+                <p>Dashboard</p>
+            </button>
+        </a>
+        </div>
+        <a href="products.html">
+        <div class="btn nav-btn">
+            <button type="submit">
+                <img src="image/productsIcon.png" class="image" style="width: 30px; height: 30px;">
+                <p>Products</p>
+            </button>
+        </a>
+        </div>
+        <div class="btn nav-btn">
+            <a href="categories.html">
+                <button type="submit">
+                    <img src="image/categoryIcon.png" class="image" style="width: 30px; height: 30px;">
+                    <p>Categories</p>
+                </button>
+              </a>
+        </div>
+        <div class="btn nav-btn">
+           <a href="orders.html">
+            <button type="submit">
+                <img src="image/orderIcon.png" class="image" style="width: 30px; height: 30px;">
+                <p>Orders</p>
+            </button>
+           </a>
+        </div>
+    </div>
+    </div>
+    <!-- end -->
+
+
+
+
+    <!-- user info -->
+    <div class="user-info">
+        <!-- eto yung border -->
+        <div class="box1">
+        </div>
+        <!-- eto yung box sa loob ng box pag nag choose ng image -->
+        <div class="box2"></div>
+    
+        <!-- text area -->
+        <div class="product-describe">
+            <div class="text">
+                <textarea id="productNameInput" maxlength="1000" onfocus="clearDefaultValue(this)" onblur="restoreDefaultValue(this)">Product Name:</textarea>
+            </div>
+            <div class="text">
+                <textarea id="productPriceInput" maxlength="1000" onfocus="clearDefaultValue(this)" onblur="restoreDefaultValue(this)">Product Price:</textarea>
+            </div>
+            <div class="text">
+                <textarea id="productDescInput" maxlength="1000" onfocus="clearDefaultValue(this)" onblur="restoreDefaultValue(this)">Describe your product..</textarea>
+            </div>
+        </div>
+
+        <!-- choose file -->
+        <div class="file">
+            <input type="file">
+        </div>
+
+        <div class="user-data">
+            <div class="table">
+             <table>
+                 <tr>
+                   <th>Products</th>
+                   <th>Stocks</th>
+                   <th>Sold</th>
+                   <th>Action</th>
+                 </tr>
+                 <tr>
+                   <td> <img src="image/1_1-removebg-preview 1.png" alt=""><p>entle Brighten...</p></td>
+                   <td>cabalida@gmail.coim</td>
+                   <td>0644785544</td>
+                   <td>asdasdasd</td>
+                 </tr>
+                 <tr>
+                    <td> <img src="image/1_1-removebg-preview 1.png" alt=""><p>entle Brighten...</p></td>
+                    <td>cabalida@gmail.coim</td>
+                    <td>0644785544</td>
+                    <td>asdasdasd</td>
+                  </tr>
+               </table>
+             </div> 
+ 
+         </div>
+    </div>
+
+    
+    
+
+    <script src="products.js"> </script>
+    
+</body>
+</html>

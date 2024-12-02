@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/orders.css">
+    <title>Orders</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logoBrand">
+                    <a href="homePage.html"><img src="image/logoIcon (1).png" class="logoIcon"></a>
+                    <h1 class="brandName">BeautyandtheBest</h1>
+                </div>
+                <a href=""><img src="image/registerUser.png" class="profileIcon"></a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="menu">
+        <div class="section">
+            <div class="btn nav-btn">
+                <a href="dashboard.html">
+                    <button type="submit">
+                        <img src="image/dashboardIcon.png" class="image" style="width: 30px; height: 30px;">
+                        <p>Dashboard</p>
+                    </button>
+                </a>
+            </div>
+            <a href="products.html">
+                <div class="btn nav-btn">
+                    <button type="submit">
+                        <img src="image/productsIcon.png" class="image" style="width: 30px; height: 30px;">
+                        <p>Products</p>
+                    </button>
+                </div>
+            </a>
+            <div class="btn nav-btn">
+                <a href="categories.html">
+                    <button type="submit">
+                        <img src="image/categoryIcon.png" class="image" style="width: 30px; height: 30px;">
+                        <p>Categories</p>
+                    </button>
+                </a>
+            </div>
+            <div class="btn nav-btn">
+                <a href="orders.html">
+                    <button type="submit">
+                        <img src="image/orderIcon.png" class="image" style="width: 30px; height: 30px;">
+                        <p>Orders</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="user-info">
+        <div class="user-data">
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Product ID</th>
+                        <th>Price</th>
+                        <th>User</th>
+                        <th>MOP</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td><img src="image/1_1-removebg-preview 1.png" alt=""></td>
+                        <td>Wr44svhg0..</td>
+                        <td>₱ 199</td>
+                        <td>Bhoxz K..</td>
+                        <td>PayPal</td>
+                        <td><button class="btn1">To Pay</button></td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/1_1-removebg-preview 1.png" alt=""></td>
+                        <td>Wr44svhg0..</td>
+                        <td>₱ 199</td>
+                        <td>Bhoxz K..</td>
+                        <td>PayPal</td>
+                        <td><button class="btn2">Top Ship</button></td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/1_1-removebg-preview 1.png" alt=""></td>
+                        <td>Wr44svhg0..</td>
+                        <td>₱ 199</td>
+                        <td>Bhoxz K..</td>
+                        <td>PayPal</td>
+                        <td><button class="btn3">To Receive</button></td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/1_1-removebg-preview 1.png" alt=""></td>
+                        <td>Wr44svhg0..</td>
+                        <td>₱ 199</td>
+                        <td>Bhoxz K..</td>
+                        <td>PayPal</td>
+                        <td><button class="btn4">Cancelled</button></td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/1_1-removebg-preview 1.png" alt=""></td>
+                        <td>Wr44svhg0..</td>
+                        <td>₱ 199</td>
+                        <td>Bhoxz K..</td>
+                        <td>PayPal</td>
+                        <td><button class="btn5">Received</button></td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                </table>
+            </div> 
+        </div>
+    </div>  
+
+    <!-- Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Order</h2>
+            <form id="editForm">
+                 <div class="inputs">  
+                    <label for="product">Product:</label> <br>
+                    <input type="text" id="product" name="product" value="" required>
+                 </div> 
+           
+                 <div class="inputs">
+                    <label for="price">Price:</label><br>
+                    <input type="number" id="price" name="price" value="" required>
+                 </div>
+                  
+                 <div class="inputs">
+                <label for="status">Status:</label> <br>
+                <select id="status" name="status">
+                    <option value="To Pay">To Pay</option>
+                    <option value="To Ship">To Ship</option>
+                    <option value="To Receive">To Receive</option>
+                    <option value="Cancelled">Cancelled</option>
+                    <option value="Received">Received</option>
+                </select>
+                 </div>
+                
+        
+                <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+ 
+    <script src="js/orders.js"></script>
+</body>
+</html>
+
+</body>
+</html>
