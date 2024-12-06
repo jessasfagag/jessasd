@@ -83,7 +83,6 @@ a {
 
 /* Menu styling */
 .menu {
-   
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center;
@@ -151,7 +150,6 @@ button p{
 .user-info{
     background-color: white;
     max-width: 100%;
-    height: 1000px;
     position: relative;
     margin-top: -540px;
     margin-left: 213px;
@@ -169,6 +167,7 @@ button p{
     margin-left: 40px;
     border-radius: 20px;
     border: 1px solid black;
+   
 }
 
 
@@ -176,9 +175,23 @@ button p{
 .file{
     border: none;
     margin-left: 100px;
-    margin-top: -100px;
-    margin-bottom: 40px;
+    margin-top: -140px;
+    margin-bottom: 40px; 
+    display: flex;
+    flex-direction: column; /* Para ang file input at button ay nakasunod nang patayo */
+    align-items: flex-start; /* Optional: Para itapat ang mga items sa kaliwa */
+    gap: 10px; /* Optional: Para magkaroon ng kaunting espasyo sa pagitan ng mga elemento */ 
 }
+
+
+
+.file button{
+    width: 261px;
+    height: 41px;
+   border-radius: 10px;
+
+}
+
 
 input[type="file"] {
     width: 261px; /* Set the width */
@@ -211,13 +224,13 @@ input[type="file"] {
     cursor: pointer; /* Pointer cursor for the button */
   }
 
-
   .box2{
     margin-left: 125px;
-    margin-top: -320px;
+    margin-top: -335px;
     background-color: #E2E2E2;
     width: 200px;
     height: 200px;
+    margin-bottom: 10px;
 } 
 
   
@@ -255,13 +268,11 @@ input[type="file"] {
 /* end */
 
 
-
-
-
 .user-data {
-    width: 100%;
+    width: 81.10%;
     padding: 20px;
-    margin-top: -20px;
+    margin-left: 230px;
+    margin-top: -20PX;
   }
   
   /* Table container for horizontal scroll */
